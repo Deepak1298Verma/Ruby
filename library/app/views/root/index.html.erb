@@ -1,0 +1,16 @@
+<%= render "header" %>
+<form method = "POST" action="/add">
+<%= token_tag %>
+    <div class="mb-3 col-md-6" style="margin: 0 auto">
+    <label for="examtitleidpleFormControlInput1" class="form-label">Title</label>
+    <input type="text" class="form-control" id="titleid" >
+    </div>
+    <div class="mb-3 col-md-6" style="margin: 0 auto">
+    <label for="descriptionid" class="form-label">Description</label>
+    <textarea class="form-control" id="descriptionid" rows="3"></textarea>
+    </div>
+    <div>
+        <input type="submit" class="btn btn-primary" value="Add" style="display : block; margin: 0 auto">
+    </div>
+</form>
+<%= render "footer" %>
